@@ -1,0 +1,28 @@
+{
+  "name": "whale-finder",
+  "version": "1.0.0",
+  "description": "simple simulation to locate whales using multiple receivers and time difference of arrival",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/*js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eloise-yang/whale-finder.git"
+  },
+  "keywords": [
+    "whales"
+  ],
+  "author": "eloise yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eloise-yang/whale-finder/issues"
+  },
+  "homepage": "https://github.com/eloise-yang/whale-finder#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "webpack": "^4.41.5"
+  }
+}

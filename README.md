@@ -1,7 +1,7 @@
 # whale-finder
 Simplified simulation of how to locate whales using multiple receivers and time differences of arrival 
 
-link: file:///Users/eloiseyang/Desktop/Spiesberger_Video/apps/whale-finder/index.html
+link: https://eloise-yang.github.io/whale-finder/
 
 ## Development Startup Instructions:
 To start up the app in a development environment (as opposed to production), navigate to the root of the whale-finder directory, and type "webpack". Then open your browser, and open up the index.html file. You should be able to see the app you are developing. 

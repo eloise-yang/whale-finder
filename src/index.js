@@ -69,10 +69,6 @@ const drawCanvas = () => {
     const whaleButton = document.getElementById("generatewhalebutton");
     whaleButton.onclick = () => drawRandomWhale(canvas, ctx);
 
-    //get a whale image 
-    // const whalePos = generateRandomPos(canvas.width, canvas.height);
-    // const whaleImage = getwhaleImage();
-    // drawWhale(whaleImage, whalePos.x, whalePos.y, ctx);
 }
 
 

@@ -1,27 +1,33 @@
+<!-- This is the entry point for the app -->
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Whale Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This links the style sheet where you have your styles. You can add more stylesheets Whenever you want -->
     <link rel="stylesheet" type="text/css" href="./main.css" />
 </head>
 
+<!-- The body of the main page starts here. You will only see things that are within these body tabs -->
+
 <body>
+    <!-- A div is a division of the page. You can (and should) use them to separate different portions of the web page. -->
     <div class="header">
 
         <h1>Whale Finder</h1>
 
         <p>A simplified simulation for locating whales using multiple receivers and time differences of arrival</p>
     </div>
+    <!-- You can add css styles to html elements by adding class="stylename" in the opening html tag for the element -->
     <div class="canvascontainer">
         <canvas id="ocean"></canvas>
         <script src="./dist/main.js"></script>
     </div>
     <div class="buttoncontainer">
+        <!-- This is an html button element with an id. The id is what the computer uses to IDENTIFY the element -->
         <button id="generatewhalebutton" class="button">Generate Whale</button>
     </div>
-</body>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+/* This is the main css style sheet. It contains custom styles for html elements. */
+
 body {
     background: #839192;
     font-family: verdana;
@@ -10,9 +12,19 @@ body {
     font-size: 20px;
 }
 
+
+/* This is the style for the canvas html element. Since the style has the same name as html element,
+    we do not need to put a period before name when defining the style. You also don't need to write 
+    class="stylename" in the html element. */
+
 canvas {
     border: 1px solid #2E4053;
 }
+
+
+/* This is the style for the div that contains the canvas in the app. Since the div is not called
+   "canvascontainer", or since the class/ stylename does not match the name of the html element, you
+   do need to put a period before the name of the style. */
 
 .canvascontainer {
     align-items: center;

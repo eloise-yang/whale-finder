@@ -8,6 +8,35 @@ const getwhaleImage = () => {
     return image;
 }
 
+function draw() {
+    var canvas = document.getElementById('circle');
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        var X = canvas.width / 2;
+        var Y = canvas.height / 2;
+        var R = 45;
+        ctx.beginPath();
+        ctx.arc(X, Y, R, 0, 2 * Math.PI, false);
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#FF0000';
+        ctx.stroke();
+    }
+}
+
+/**
+ * Draws a receiver
+ * @param {*} circle the image of the receiver/circle
+ * @param {*} cx The x position of the center of the circle 
+ * @param {*} cy The y position of the center of the circle
+ * @param {*} r The radius of the circle
+ * @param {*} canvasCtx the context of the canvas on which it is drawn
+ */
+//const drawReceiver = (circle, cx, cy, r,canvasCtx) => {
+//const receiver = document.getElementById("generatereceiver");
+//  drawReceiver(circle, cx, cy, r, canvasCtx);
+
+
+
 /**
  * Draws a whale
  * @param {*} whaleImage The image of the whale

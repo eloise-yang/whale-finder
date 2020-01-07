@@ -1,4 +1,6 @@
 import { generateRandomPos } from "./math";
+import { receiver1Params } from "./receiverpos";
+
 /**
  * returns an image of a whale
  */
@@ -34,7 +36,6 @@ const drawRandomWhale = (canvas, ctx) => {
     // reset the canvas to clear any existing whale
     resetCanvas(canvas, ctx);
 
-
     // draw the whale
     const whalePos = generateRandomPos(canvas.width, canvas.height);
     const whaleImage = getwhaleImage();
@@ -49,16 +50,10 @@ const drawRandomWhale = (canvas, ctx) => {
  * @param {*} ctx the context of the canvas on which it is drawn
  */
 const drawReceiver = (cx, cy, r, ctx) => {
-
-    if (ctx) {
-        ctx.beginPath();
-        ctx.arc(cx, cy, r, 0, 2 * Math.PI, false);
-        // ctx.stroke();
-        // ctx.fillStyle = "black";
-        ctx.fill();
-        // ctx.closePath();
-    }
-
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, 2 * Math.PI, false);
+    ctx.fillStyle = "black";
+    ctx.fill();
 }
 
 
@@ -73,7 +68,7 @@ const resetCanvas = (canvas, ctx) => {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     //draws a receiver
-    drawReceiver(10, 10, 5, ctx);
+    drawReceiver(receiver1Params.x, receiver1Params.y, receiver1Params.r, ctx);
 
 }
 
@@ -94,8 +89,9 @@ const drawCanvas = () => {
     ctx.fillStyle = "#2E4053";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+
     //draws a receiver
-    drawReceiver(10, 10, 5, ctx);
+    drawReceiver(receiver1Params.x, receiver1Params.y, receiver1Params.r, ctx);
 
     //handle generating whale using button 
     const whaleButton = document.getElementById("generatewhalebutton");

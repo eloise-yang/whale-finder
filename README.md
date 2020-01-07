@@ -31,4 +31,11 @@ You can type these commands into your terminal (as long as you are in a director
 - git push origin master
 
 
+## To deploy to github pages
+from your root directory for the app: 
 
+npm run build # or anything you want which build the app in dist/
+cd dist
+git add .
+git commit -am 'some commit message'
+git push origin gh-pages

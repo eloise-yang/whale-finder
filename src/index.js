@@ -1,5 +1,11 @@
 import { generateRandomPos } from "./math";
 import { receiver1Params } from "./receiverpos";
+import { receiver2Params } from "./receiverpos";
+import { receiver3Params } from "./receiverpos";
+
+
+
+
 
 /**
  * returns an image of a whale
@@ -9,9 +15,6 @@ const getwhaleImage = () => {
     image.src = "https://img.icons8.com/office/80/000000/whale.png";
     return image;
 }
-
-
-
 
 
 
@@ -69,8 +72,17 @@ const resetCanvas = (canvas, ctx) => {
 
     //draws a receiver
     drawReceiver(receiver1Params.x, receiver1Params.y, receiver1Params.r, ctx);
-
+    drawReceiver(receiver2Params.x, receiver2Params.y, receiver2Params.r, ctx);
+    drawReceiver(receiver3Params.x, receiver3Params.y, receiver3Params.r, ctx);
 }
+
+//defines an audio context
+//audioContext, err = audio.NewContext(44100);
+//loads in file
+//f, err: = ebitenutil.OpenFile("whale call.mp3");
+//d, err: = wav.Decode(audioContext, f);
+//audioPlayer, err = audio.NewPlayer(audioContext, d);
+
 
 /**
  * This function initializes the canvas
@@ -92,10 +104,15 @@ const drawCanvas = () => {
 
     //draws a receiver
     drawReceiver(receiver1Params.x, receiver1Params.y, receiver1Params.r, ctx);
+    drawReceiver(receiver2Params.x, receiver2Params.y, receiver2Params.r, ctx);
+    drawReceiver(receiver3Params.x, receiver3Params.y, receiver3Params.r, ctx);
 
     //handle generating whale using button 
     const whaleButton = document.getElementById("generatewhalebutton");
     whaleButton.onclick = () => drawRandomWhale(canvas, ctx);
+
+    const soundButton = document.getElementById("generatesoundbutton");
+
 
 
 }

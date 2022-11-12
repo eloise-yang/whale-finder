@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/eloise-yang/whale-finder#readme",
   "devDependencies": {
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "webpack": "^4.41.5"
